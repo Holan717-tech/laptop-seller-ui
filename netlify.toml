@@ -1,5 +1,5 @@
 [build]
-  command = "build.bat"
+  command = "bash build.sh"
   publish = "build/web"
 
 [[plugins]]
