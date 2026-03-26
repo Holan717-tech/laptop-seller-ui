@@ -1,6 +1,19 @@
 #!/bin/bash
+set -e  # exit on error
+
+echo "Installing Flutter (if needed)..."
+if [ ! -d "flutter" ]; then
+  git clone https://github.com/flutter/flutter.git -b stable --depth 1
+fi
+export PATH="$PATH:$PWD/flutter/bin"
+
+# Use the stable channel
+flutter channel stable
+flutter upgrade
+
 echo "Building Flutter web app..."
 flutter clean
+flutter pub get
 flutter build web --release
 
 echo "Adding version to service worker..."
