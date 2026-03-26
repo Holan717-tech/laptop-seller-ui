@@ -44,28 +44,16 @@ class LaptopProvider extends ChangeNotifier {
 Future<void> _loadLaptops() async {
   print('📂 _loadLaptops() started');
   try {
-    final prefs = await SharedPreferences.getInstance();
-    final String? laptopsJson = prefs.getString(_storageKey);
-
-    if (laptopsJson != null && laptopsJson.isNotEmpty) {
-      print('📦 Found saved data, length: ${laptopsJson.length}');
-      final List<dynamic> jsonList = json.decode(laptopsJson);
-      _laptops = jsonList.map((json) => Laptop.fromJson(json)).toList();
-      print('✅ Loaded ${_laptops.length} laptops from storage');
-      for (var laptop in _laptops) {
-        print('   - ${laptop.brand} ${laptop.model}, images: ${laptop.images.length}');
-      }
-    } else {
-      print('📝 No saved data – loading from JSON file');
+     
       // Load from assets/laptops.json
       final String jsonString = await rootBundle.loadString('assets/laptops.json');
       final List<dynamic> jsonList = json.decode(jsonString);
       _laptops = jsonList.map((json) => Laptop.fromJson(json)).toList();
       print('✅ Loaded ${_laptops.length} laptops from JSON file');
-      // Save to SharedPreferences so it persists
-      await _saveLaptops();
-      print('💾 Sample data saved to storage');
-    }
+//      // Save to SharedPreferences so it persists
+     //await _saveLaptops();
+    //  print('💾 Sample data saved to storage');
+    
   } catch (e, stack) {
     print('❌ Error loading laptops: $e');
     print(stack);
