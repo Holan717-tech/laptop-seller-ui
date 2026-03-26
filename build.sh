@@ -16,6 +16,11 @@ flutter clean
 flutter pub get
 flutter build web --release
 
+# Copy _headers if present
+if [ -f "_headers" ]; then
+  cp _headers build/web/
+fi
+
 echo "Adding version to service worker..."
 TIMESTAMP=$(date +%s)
 sed -i "s|flutter_service_worker\.js|flutter_service_worker.js?v=$TIMESTAMP|" build/web/index.html
