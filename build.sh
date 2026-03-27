@@ -14,9 +14,10 @@ flutter upgrade
 echo "Building Flutter web app..."
 flutter clean
 flutter pub get
-flutter build web --release
+# Important: set base href to match your GitHub Pages subdirectory
+flutter build web --release --base-href "/laptop-seller-ui/"
 
-# Copy _headers if present
+# Copy _headers if present (optional for GitHub Pages)
 if [ -f "_headers" ]; then
   cp _headers build/web/
 fi
