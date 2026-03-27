@@ -129,27 +129,5 @@
     ],
     "description": "Apple MacBook Air Mid 2012 – classic, lightweight, reliable",
     "isAsset": true
-  },
-  {
-    "id": "8",
-    "brand": "Lenovo",
-    "model": "E41",
-    "processor": "AMD A6 7310",
-    "ram": "4GB DDR3",
-    "storage": "128GB SATA SSD",
-    "graphics": "AMD R4 Onboard",
-    "screenSize": 14.6,
-    "displayType": "HD",
-    "price": 4999,
-    "stock": 1,
-    "imageUrl": "assets/images/Lenovo-E41-1.jpg",
-    "thumbnailUrl": "assets/thumbnails/Lenovo-E41-1.jpg",
-    "images": [
-      "assets/images/Lenovo-E41-2.jpg",
-      "assets/images/Lenovo-E41-3.jpg",
-      "assets/images/Lenovo-E41-4.jpg"
-    ],
-    "description": "Lenovo E41 – efficient AMD A6, 4GB RAM, 128GB SSD",
-    "isAsset": true
   }
 ]
