@@ -89751,7 +89751,7 @@ $2(a,b){A.fT("Error loading image: "+this.a+", exception: "+A.k(a))},
 $S:206}
 A.Nj.prototype={
 L(a){var s=null,r=A.bH(a,s,t.w).w,q=A.aP8(s,s,new A.oB("assets/images/logo.png",s,s))
-return A.dr(s,A.jV(s,A.dk(A.c([new A.tV(q,32,32,B.bC,B.j4,!1,s),B.fm,A.cW(A.bW(u.l,2,B.aC,s,!0,A.cb(s,s,B.i,s,s,s,s,s,s,s,s,r.a.a>800?20:14,s,s,B.aM,s,s,!0,s,s,s,s,s,s,s,s),s,s),1)],t.p),B.N,B.I,B.Q,0),B.U,!1,s,s,s,s,s,s,s,this.e,s,s,s,s,s,s,s,s,s,s,s,s,s),B.r,s,s,s,s,s,s,B.FM,s,s,s)}}
+return A.dr(s,A.jV(s,A.dk(A.c([new A.tV(q,64,64,B.bC,B.j4,!1,s),B.fm,A.cW(A.bW(u.l,2,B.aC,s,!0,A.cb(s,s,B.i,s,s,s,s,s,s,s,s,r.a.a>800?20:14,s,s,B.aM,s,s,!0,s,s,s,s,s,s,s,s),s,s),1)],t.p),B.N,B.I,B.Q,0),B.U,!1,s,s,s,s,s,s,s,this.e,s,s,s,s,s,s,s,s,s,s,s,s,s),B.r,s,s,s,s,s,s,B.FM,s,s,s)}}
 A.yM.prototype={
 bg(a){var s,r,q=this.x,p=q.i(0,a)
 if(p!=null)return p
