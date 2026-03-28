@@ -17,7 +17,7 @@ class _LaptopDetailPageState extends State<LaptopDetailPage> {
   final PageController _pageController = PageController();
   int _currentImageIndex = 0;
 
-  final String phoneNumber = "+918055006894"; // Updated number
+  final String phoneNumber = "+918055006894";
 
   String _formatINR(double price) {
     String priceStr = price.round().toString();
@@ -127,15 +127,15 @@ I'm interested in this laptop:
     return Scaffold(
       appBar: AppBar(
         title: Text('${widget.laptop.brand} ${widget.laptop.model}'),
-        backgroundColor: const Color(0xFF667eea),
+        backgroundColor: Colors.black,
         foregroundColor: Colors.white,
       ),
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [Color(0xFF667eea), Color(0xFF764ba2)],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [Colors.black, Colors.white],
           ),
         ),
         child: SingleChildScrollView(
@@ -280,7 +280,7 @@ I'm interested in this laptop:
                               icon: const Icon(Icons.phone, color: Colors.white),
                               label: const Text('Call Now'),
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: const Color(0xFF667eea),
+                                backgroundColor: Colors.black87,
                                 foregroundColor: Colors.white,
                                 padding: const EdgeInsets.symmetric(vertical: 16),
                                 shape: RoundedRectangleBorder(
