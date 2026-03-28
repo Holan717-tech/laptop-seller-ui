@@ -29,16 +29,29 @@ class Navbar extends StatelessWidget {
             ),
             const SizedBox(width: 10),
             Expanded(
-              child: Text(
-                'Second Life Computers - Renewed And Ready To Use',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: isDesktop ? 20 : 14,
-                  fontWeight: FontWeight.bold,
-                ),
-                softWrap: true,
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'SECOND LIFE COMPUTERS',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: isDesktop ? 20 : 16,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 1.0,
+                    ),
+                    softWrap: true,
+                  ),
+                  Text(
+                    'Renewed And Ready To Use',
+                    style: TextStyle(
+                      color: Colors.white70,
+                      fontSize: isDesktop ? 14 : 10,
+                      fontWeight: FontWeight.normal,
+                    ),
+                    softWrap: true,
+                  ),
+                ],
               ),
             ),
           ],
