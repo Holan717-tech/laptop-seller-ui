@@ -1,27 +1,5 @@
 [
   {
-    "id": "1",
-    "brand": "Dell",
-    "model": "Inspiron 5300",
-    "processor": "Intel Core i5-8265U",
-    "ram": "16GB DDR4",
-    "storage": "256GB NVMe SSD",
-    "graphics": "Integrated",
-    "screenSize": 14.0,
-    "displayType": "HD",
-    "price": 20000,
-    "stock": 1,
-    "imageUrl": "assets/images/Dell-5300-1.jpg",
-    "thumbnailUrl": "assets/thumbnails/Dell-5300-1.jpg",
-    "images": [
-      "assets/images/Dell-5300-2.jpg",
-      "assets/images/Dell-5300-3.jpg",
-      "assets/images/Dell-5300-4.jpg"
-    ],
-    "description": "Dell Inspiron 5300 – powerful i5, 16GB RAM, 256GB NVMe SSD",
-    "isAsset": true
-  },
-  {
     "id": "2",
     "brand": "Lenovo",
     "model": "V130-15",
